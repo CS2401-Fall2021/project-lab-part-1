@@ -5,9 +5,9 @@ This lab will be the first part in a series of labs which will result in a text-
 In this portion of the lab, you will be creating the objects and methods to represent the functioning portions of the game. 
 
 
-A GAME starts at an initial POINT, and some number of KEYS
+### 1) A GAME starts at an initial POINT, and some number of KEYS
 
-Each POINT in game has the following information
+### 2) Each POINT in game has the following information
 * Welcome Message
 * Whether or not it contains the treasure 
 * Some number of KEYS
@@ -16,29 +16,29 @@ Each POINT in game has the following information
 * If this POINT is locked or not
 * The ID of the key that unlocks this POINT
 
-Each KEY in the game has a specific integer ID
+### 3) Each KEY in the game has a specific integer ID
 
 
-Your GAME will need to do the following for each POINT:
+If your GAME will is at a POINT, it will do the following:
 
 1. Print out the welcome message
 2. If the treasue is at the point, print a *congratulations message* and end the game
 3. If there are KEYS in this room, print a message that a key has been found. 
 4. Check which of the PASSAGEWAYS are available: that is they are unlocked or unlockable by the KEYS
-5. Print a list of the available PASSAGEWAYS or the option to go *back* to the previous POINT (unless this does not exist, e.g. the starting POINT)
+5. Print a list of the available PASSAGEWAYS, or the option to go *back* to the previous POINT (unless this does not exist, e.g. the starting POINT)
 6. Read in user response via a scanner method
-7. If the response can be interpreted, use that to determine which PASSAGEWAY is taken to your next POINT.
+7. If the response can be interpreted, use that to determine your next POINT.
 8. Otherwise, re-prompt the user 
 
 
 
-Part 1: The KEY Class
+## Part 1: The KEY Class
 This will create a fairly simple object but is good practice to make sure you understand how to create a class and use it to make an object.
 1. Create a Key.java file
 2. It should contain a unique, unchangeable integer ID that is assigned in the constructor method
 3. There should be a *method* getKeyId() that returns the integer ID
 
-Part 2: The POINT Class
+## Part 2: The POINT Class
 To create this object, we need to know:
 * If if contains the treasure
 * It's initial state of being locked
@@ -47,10 +47,22 @@ To create this object, we need to know:
 * What KEYs it contains
 * What POINTs it leads to
 
-Part 3: The GAME Class
-Game.java should have the following methods
-1. CreateSimpleGame(), which constructs a game with the following structure:
-![image with 3 nodes](drawing.png)
-2. PrintPoint(Point p), which performs steps 1-8 listed above.
+To implement this, we need the followig methods
+* setParentPoint(Point p) method
+* add
 
+## Part 3: The GAME Class
+Game.java should have the following methods
+1. createSimpleGame(), which constructs a game with the following structure:
+![image with 3 nodes](drawing.png)
+2. printPoint(Point p), which performs steps 1-8 listed above.
+3. in the main() method, it should call createSimpleGame() first, and then printPoint() until the game is solved. 
+4. Run Game.java
+
+
+## Take it Further
+1. Add some cool ascii art to each point's message (You can reuse what you had for Lab 2)
+2. Implement a new feature of your game. Maybe a secret tunnel that leads to a different point? or points that automatically end the game?
+3. Break out the portions of PrintPoint() into smaller methods that encompass smaller tasks
+4. Add some customization to your game. Are you an explorer in a haunted house? A starship traveling through wormholes to different galaxies? Be creative!
 
