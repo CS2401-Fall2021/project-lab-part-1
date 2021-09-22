@@ -48,7 +48,7 @@ To create this object, we need to know:
 * What KEYs it contains
 
 
-## Part 3: The GAME Class
+## Part 3: The GAME Class (70 pts total)
 Game.java should have the following methods
 1. createSimpleGame(int numKeys), which constructs an array of ROOMs, with at most numKeys keys. This can be whatever you want! (20 pts)
 2. printHallway(Room[] rooms, boolean[] keysFound), which does the Hallway Steps listed above (20 pts)
@@ -65,8 +65,27 @@ import java.util.Scanner;
 ```
 
 to use the scanner
+```
  Scanner scanner = new Scanner(System.in);
-    String line = scanner.nextLine();
+ String line = scanner.nextLine();
+ ```
+ to try to parse the string to an integer
+ 
+ ```
+ Integer.parseInt
+ ```
+ 
+ Note that this will throw a NumberFormatException if the string does not contain a parsable integer. So we need to wrap it in a try...catch statement
+ 
+ So we need to wrap it in a 
+ 
+ ```
+ try{ 
+ Integer.parseInt(line);
+ } catch(NumberFormatException e){
+
+ }
+ ```
 
 ## Take it Further
 1. Add some cool ascii art to each room's message (You can reuse what you had for Lab 2)
