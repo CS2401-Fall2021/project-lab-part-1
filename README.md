@@ -1,4 +1,4 @@
-# Project Lab: Part 1
+# Project Lab: Part 1 
 
 This lab will be the first part in a series of labs which will result in a text-based adventure game structure that you can use to auto-generate games, test them, and ensure that they are solveable. 
 
