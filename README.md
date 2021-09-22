@@ -6,6 +6,8 @@ In this portion of the lab, you will be creating the objects and methods to repr
 
 You are in a long hallway with lots of rooms some of which might be locked. The rooms can contain keys that can be used to unlock other doors, and treasure. The goal of the game is to find the treasure. 
 
+## GRADING
+In order to get a grade for this lab, you will need to schedule time with Marissa Stephens, Lidice, Susana, or Dustyn the week after the lab is due to run through your code, and your game.   
 
 ### 1) A GAME starts at an initial ROOM, and an empty array of keys that have been found.
 
@@ -13,8 +15,8 @@ You are in a long hallway with lots of rooms some of which might be locked. The 
 * Welcome Message
 * Whether or not it contains the treasure 
 * Some number of KEYS
-* If this POINT is locked or not
-* The ID of the key that unlocks this POINT
+* If this ROOM is locked or not
+* The ID of the key that unlocks this ROOM
 
 ### 3) Each KEY in the game has a specific integer ID
 
@@ -37,24 +39,27 @@ Every time you enter the hallway you:
 ## Part 1: The KEY Class (10 pts)
 This will create a fairly simple object but is good practice to make sure you understand how to create a class and use it to make an object.
 1. Create a Key.java file
-2. It should contain a unique, unchangeable integer ID that is assigned in the constructor method
-3. There should be a *method* getKeyId() that returns the integer ID
+2. It should contain integer ID that is assigned in the constructor method
 
 ## Part 2: The ROOM Class (20 pts)
-To create this object, we need to know:
-* If if contains the treasure
-* It's initial state of being locked
-* The ID of the key that opens it
-* What KEYs it contains
+This creates an object that represents the information about the room. 
+1. Create Room.java file
+2. It should take in the following values in the constructor
+   * If if contains the treasure
+   * It's initial state of being locked
+   * The ID of the key that opens it
+   * What KEYs it contains
+3. Have a method unlock(int key), which sets the value representing the locked state to true if the input key matches the key that unlocks the room. If successful, it should return true. Otherwise, it returns false and does not change the locked state.
 
 
 ## Part 3: The GAME Class (70 pts total)
-Game.java should have the following methods
-1. createSimpleGame(int numKeys), which constructs an array of ROOMs, with at most numKeys keys. This can be whatever you want! (20 pts)
-2. printHallway(Room[] rooms, boolean[] keysFound), which does the Hallway Steps listed above (20 pts)
-2. printRoom(Room room, boolean[] keysFound), which performs steps 1-4 listed above. (10 pts)
-3. runGame(), which calls createSimpleGame, creates a boolean[] of keysFound, and then until the treasure is found alternates between printingHallway, and printRoom. (20 pts)
-4. in the main() method, it should call runGame(). 
+Game.java should have the following methods:
+1. createSimpleGame(int numKeys), which constructs an array of ROOMs, with at most numKeys keys. This can be whatever you want! (20 pts)  
+ 
+3. printHallway(Room[] rooms, boolean[] keysFound), which does the Hallway Steps listed above (20 pts)
+4. printRoom(Room room, boolean[] keysFound), which performs steps 1-4 listed above. (10 pts)
+5. runGame(), which calls createSimpleGame, creates a boolean[] of keysFound, and then until the treasure is found alternates between printingHallway, and printRoom. (20 pts)
+6. in the main() method, it should call runGame(). 
 
 ## Helpful tool: Scanner.java class
 To read in a user's input, you need to use the Scanner.java class. 
@@ -86,6 +91,8 @@ to use the scanner
 
  }
  ```
+## Grading Reminder
+In order to get a grade for this lab, you will need to schedule an appointment with either Marissa Stephens (Lab instrucor), Lidice(TA) or Susana/Dusytn(IA) to review your code and run through your game. 
 
 ## Take it Further
 1. Add some cool ascii art to each room's message (You can reuse what you had for Lab 2)
