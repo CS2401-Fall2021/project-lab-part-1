@@ -54,14 +54,26 @@ This creates an object that represents the information about the room.
 
 ## Part 3: The GAME Class (70 pts total)
 Game.java should have the following methods:
-1. createSimpleGame(int numKeys), which constructs an array of ROOMs, with at most numKeys keys. This can be whatever you want! (20 pts)  
- 
-3. printHallway(Room[] rooms, boolean[] keysFound), which does the Hallway Steps listed above (20 pts)
-4. printRoom(Room room, boolean[] keysFound), which performs steps 1-4 listed above. (10 pts)
-5. runGame(), which calls createSimpleGame, creates a boolean[] of keysFound, and then until the treasure is found alternates between printingHallway, and printRoom. (20 pts)
-6. in the main() method, it should call runGame(). 
+### 3.1 Room[] createSimpleGame(int numKey) (10 pts)
+Returns an array of ROOMs, with at most numKeys keys. Be creative, but it must return at least 5 rooms.
 
-## Helpful tool: Scanner.java class
+### 3.2 Room[] sortRooms(Room[]) (10 pts)
+This method sorts the rooms by the key that unlocks them using the sorting algorithm of your choice.
+
+### 3.3 printHallway(Room[] rooms, boolean[] keysFound) (20 pts)
+Performs the Hallway Steps listed above. You might want to read the Helpful tool: Scanner.java section before implementing.
+
+### 3.4 printRoom(Room room, boolean[] keysFound) (10 pts)
+Performs Room steps 1-4 listed above. 
+
+### 3.5 main()
+* defines a numKey greater than 3
+* Calls createSimpleGame with numKey
+* creates a boolean[] of keysFound the length of numKey
+* Begins the game by calling printHallway. 
+
+
+## Helpful tool: Scanner.java 
 To read in a user's input, you need to use the Scanner.java class. 
 
 at the top of the file, above the class defition:
@@ -77,7 +89,7 @@ to use the scanner
  to try to parse the string to an integer
  
  ```
- Integer.parseInt
+ Integer.parseInt(myString);
  ```
  
  Note that this will throw a NumberFormatException if the string does not contain a parsable integer. So we need to wrap it in a try...catch statement
@@ -86,9 +98,9 @@ to use the scanner
  
  ```
  try{ 
- Integer.parseInt(line);
+     Integer.parseInt(line);
  } catch(NumberFormatException e){
-
+     // do something else. We can't interpret the int
  }
  ```
 ## Grading Reminder
