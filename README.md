@@ -45,6 +45,7 @@ This will create a fairly simple object but is good practice to make sure you un
 This creates an object that represents the information about the room. 
 1. Create Room.java file
 2. It should take in the following values in the constructor
+   * A welcome message
    * If if contains the treasure
    * It's initial state of being locked
    * The ID of the key that opens it
