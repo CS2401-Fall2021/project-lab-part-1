@@ -7,9 +7,6 @@ public class Game {
     return new Room[0];
   }
 
-  static Room[] sortRooms(Room[] rooms){
-    return rooms;
-  }
   static void printHallway(Room[] rooms, boolean[] keysFound){
 
   }
