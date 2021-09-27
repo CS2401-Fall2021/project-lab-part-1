@@ -55,19 +55,16 @@ This creates an object that represents the information about the room.
 
 ## Part 3: The GAME Class (70 pts total)
 Game.java should have the following methods:
-### 3.1 Room[] createSimpleGame(int numKey) (10 pts)
+### 3.1 Room[] createSimpleGame(int numKey) (20 pts)
 Returns an array of ROOMs, with at most numKeys keys. Be creative, but it must return at least 5 rooms.
 
-### 3.2 Room[] sortRooms(Room[]) (10 pts)
-This method sorts the rooms by the key that unlocks them using the sorting algorithm of your choice.
-
-### 3.3 printHallway(Room[] rooms, boolean[] keysFound) (20 pts)
+### 3.2 printHallway(Room[] rooms, boolean[] keysFound) (20 pts)
 Performs the Hallway Steps listed above. You might want to read the Helpful tool: Scanner.java section before implementing.
 
-### 3.4 printRoom(Room room, boolean[] keysFound) (10 pts)
+### 3.3 printRoom(Room room, boolean[] keysFound) (10 pts)
 Performs Room steps 1-4 listed above. 
 
-### 3.5 main()
+### 3.4 main()
 * defines a numKey greater than 3
 * Calls createSimpleGame with numKey
 * creates a boolean[] of keysFound the length of numKey
