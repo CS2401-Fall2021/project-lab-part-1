@@ -1,4 +1,6 @@
-# Project Lab: Part 1 
+# Project Lab: Part 1 DUE OCTOBER 19 at NOON (Midday, lunchtime, mediodía, 12:00) 
+
+## If you commit and push por la tarde...it's considerd tardy. 
 
 This lab will be the first part in a series of labs which will result in a text-based adventure game structure that you can use to auto-generate games, test them, and ensure that they are solveable. 
 
@@ -7,7 +9,10 @@ In this portion of the lab, you will be creating the objects and methods to repr
 You are in a long hallway with lots of rooms some of which might be locked. The rooms can contain keys that can be used to unlock other doors, and treasure. The goal of the game is to find the treasure. 
 
 ## GRADING
-In order to get a grade for this lab, you will need to schedule time with Marissa Stephens, Lidice, Susana, or Dustyn the week after the lab is due to run through your code, and your game.   
+In order to get a grade for this lab, you will need to schedule time with Marissa Stephens, Lidice, Susana, or Dustyn the week after the lab is due to run through your code, and your game. You must schedule a time slot by OCTOBER 19 at NOON. To Schedule, choose an appointment slot on this calendly:
+
+
+[LINK]
 
 ### 1) A GAME starts at an initial ROOM, and an empty array of keys that have been found.
 
