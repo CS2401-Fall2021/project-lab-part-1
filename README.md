@@ -1,4 +1,4 @@
-# Project Lab: Part 1 DUE OCTOBER 19 at NOON (Midday, lunchtime, mediodía, 12:00) 
+# Project Lab: Part 1 DUE OCTOBER 19 at NOON (mediodía, 12:00) 
 
 ### si lo entregas por la tarde... es tarde
 ### If you submit in the afternoon, it's considered late
@@ -13,7 +13,7 @@ You are in a long hallway with lots of rooms some of which might be locked. The 
 In order to get a grade for this lab, you will need to schedule time with Marissa Stephens, Lidice, Susana, or Dustyn the week after the lab is due to run through your code, and your game. You must schedule a time slot by OCTOBER 19 at NOON. To Schedule, choose an appointment slot on this spreadsheet:
 
 
-[LINK TO SCHEDULE](https://minersutep-my.sharepoint.com/:x:/g/personal/mastephens_utep_edu/EUSe5sQnE05ImfW3DZANmlMBZsiFuT8dtgd5Wo0UAL1PIg?e=oeezWj)
+[LINK TO SCHEDULE](https://minersutep-my.sharepoint.com/:x:/g/personal/mastephens_utep_edu/EUSe5sQnE05ImfW3DZANmlMBt67FZ8mWge91vzS3tvBvzA)
 
 ### 1) A GAME starts at an initial ROOM, and an empty array of keys that have been found.
 
