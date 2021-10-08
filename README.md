@@ -15,6 +15,8 @@ In order to get a grade for this lab, you will need to schedule time with Mariss
 
 [LINK TO SCHEDULE](https://minersutep-my.sharepoint.com/:x:/g/personal/mastephens_utep_edu/EUSe5sQnE05ImfW3DZANmlMBt67FZ8mWge91vzS3tvBvzA)
 
+*** IF YOU DO NOT SIGN UP BY THE DUE DATE (OCT 19) YOU WILL HAVE A 50% DEDUCTION ***
+
 ### 1) A GAME starts at an initial ROOM, and an empty array of keys that have been found.
 
 ### 2) Each  ROOM in game has the following information
@@ -70,12 +72,13 @@ Performs the Hallway Steps listed above. You might want to read the Helpful tool
 ### 3.3 printRoom(Room room, boolean[] keysFound) (10 pts)
 Performs Room steps 1-4 listed above. 
 
-### 3.4 main()
+### 3.4 main(10 pts)
 * defines a numKey greater than 3
 * Calls createSimpleGame with numKey
 * creates a boolean[] of keysFound the length of numKey
 * Begins the game by calling printHallway. 
 
+### Demoing Full Walkthrough(10 pts)
 
 ## Helpful tool: Scanner.java 
 To read in a user's input, you need to use the Scanner.java class. 
