@@ -9,10 +9,10 @@ In this portion of the lab, you will be creating the objects and methods to repr
 You are in a long hallway with lots of rooms some of which might be locked. The rooms can contain keys that can be used to unlock other doors, and treasure. The goal of the game is to find the treasure. 
 
 ## GRADING
-In order to get a grade for this lab, you will need to schedule time with Marissa Stephens, Lidice, Susana, or Dustyn the week after the lab is due to run through your code, and your game. You must schedule a time slot by OCTOBER 19 at NOON. To Schedule, choose an appointment slot on this calendly:
+In order to get a grade for this lab, you will need to schedule time with Marissa Stephens, Lidice, Susana, or Dustyn the week after the lab is due to run through your code, and your game. You must schedule a time slot by OCTOBER 19 at NOON. To Schedule, choose an appointment slot on this spreadsheet:
 
 
-[LINK]
+[LINK TO SCHEDULE](https://minersutep-my.sharepoint.com/:x:/g/personal/mastephens_utep_edu/EUSe5sQnE05ImfW3DZANmlMBZsiFuT8dtgd5Wo0UAL1PIg?e=oeezWj)
 
 ### 1) A GAME starts at an initial ROOM, and an empty array of keys that have been found.
 
