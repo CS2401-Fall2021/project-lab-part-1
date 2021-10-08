@@ -1,6 +1,6 @@
 # Project Lab: Part 1 DUE OCTOBER 19 at NOON (Midday, lunchtime, mediodía, 12:00) 
 
-### si te entregas por la tarde... es tarde
+### si lo entregas por la tarde... es tarde
 ### If you submit in the afternoon, it's considered late
 
 This lab will be the first part in a series of labs which will result in a text-based adventure game structure that you can use to auto-generate games, test them, and ensure that they are solveable. 
