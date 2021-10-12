@@ -43,7 +43,7 @@ Every time you enter the hallway you:
 1. Print out the welcome message
 2. If the treasue is at the point, print a *congratulations message* and end the game
 3. If there are KEYS in this room, print a message that a key has been found, and add it to the keys found array. The key's integer is the index in the array.
-4. Return the the Hallway
+4. Return to the Hallway.
 
 
 ## Part 1: The KEY Class (10 pts)
