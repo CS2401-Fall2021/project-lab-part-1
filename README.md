@@ -24,7 +24,7 @@ In order to get a grade for this lab, you will need to schedule time with Mariss
 ### 2) Each  ROOM in game has the following information
 * Welcome Message
 * Whether or not it contains the treasure 
-* Some number of KEYS
+* Some number of KEYS (can be multiple!)
 * If this ROOM is locked or not
 * The ID of the key that unlocks this ROOM
 
@@ -35,8 +35,8 @@ In order to get a grade for this lab, you will need to schedule time with Mariss
 Every time you enter the hallway you:
 1. Check which of the ROOMS are available: that is they are unlocked or unlockable by the KEYS
 2. Print out the index of the Rooms that you can enter, and prompt the user to input a room they want to enter
-3. Parse the user's input into an integer, if it is an available room index, Perform the RoomSteps for that room.
-4. Otherwise, re-prompt the user
+3. Parse the user's input into an integer, if it is an available room index perform the RoomSteps for that room. (Call the print Room method for that room)
+5. Otherwise, re-prompt the user
 
 
 ### Room Steps
@@ -67,18 +67,18 @@ This creates an object that represents the information about the room.
 ## Part 3: The GAME Class (70 pts total)
 Game.java should have the following methods:
 ### 3.1 Room[] createSimpleGame(int numKey) (20 pts)
-Returns an array of ROOMs, with at most numKeys keys. Be creative, but it must return at least 5 rooms.
+Returns an array of ROOMs, with at most numKeys keys. Be creative, but it must return at least 5 rooms(5 can be a hardcoded value). At least one room must have multiple keys.
 
-### 3.2 printHallway(Room[] rooms, boolean[] keysFound) (20 pts)
-Performs the Hallway Steps listed above. You might want to read the Helpful tool: Scanner.java section before implementing.
+### 3.2 printHallway(Room[] rooms, boolean[] keysFound) (20 pts). 
+Performs the Hallway Steps listed above. KeysFound is a boolean array where the index represents the ID of the key. It has length numKeys. Hint: You might want to read the Helpful tool: Scanner.java section before implementing.
 
 ### 3.3 printRoom(Room room, boolean[] keysFound) (10 pts)
-Performs Room steps 1-4 listed above. 
+Performs Room steps 1-4 listed above.  KeysFound is a boolean array where the index represents the ID of the key. 
 
 ### 3.4 main(10 pts)
-* defines a numKey greater than 3
-* Calls createSimpleGame with numKey
-* creates a boolean[] of keysFound the length of numKey
+* defines a numKey greater than 3 (hardcode this value)
+* Calls createSimpleGame with numKey 
+* creates a boolean[] of keysFound the length of numKey. Every initial value should be false.
 * Begins the game by calling printHallway. 
 
 ### Demoing Full Walkthrough(10 pts)
